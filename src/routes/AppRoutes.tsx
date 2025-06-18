@@ -6,8 +6,8 @@ import { useAuth } from "@/contexts/AuthContext";
 
 const AppRoutes = () => {
   const { isAuthenticated, user, loading } = useAuth();
-
-  if (loading) return <div className="p-6">Loading auth...</div>;
+  
+  if (loading) return false;
 
   return (
     <Routes>

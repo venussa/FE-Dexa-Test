@@ -26,7 +26,7 @@ const Core = () => {
             setError("");
             try {
                 const res = await api.post("/auth/login", values);
-                const token = res.data.accessToken;
+                const token = res.data.access_token;
 
                 localStorage.setItem("token", token);
                 login(token);

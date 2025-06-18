@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <Navbar /> {/* ⬅️ HARUS ADA */}
+        <Navbar />
         <AppRoutes />
       </AuthProvider>
     </BrowserRouter>
