@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
-import { Home, Users, User } from "lucide-react";
+import { Home, Users, User, BarChart } from "lucide-react";
 
 const Navbar = () => {
   const { user } = useAuth();
@@ -13,7 +13,11 @@ const Navbar = () => {
         { label: "Employees", icon: <Users size={20} />, path: "/admin/employees" },
         { label: "Profile", icon: <User size={20} />, path: "/admin/profile" },
       ]
-    : [];
+    : [
+        { label: "Home", icon: <Home size={20} />, path: "/user/home" },
+        { label: "Summary", icon: <BarChart size={20} />, path: "/user/summary" },
+        { label: "Profile", icon: <User size={20} />, path: "/user/profile" },
+    ];
 
 return (
     <div className="fixed bottom-0 left-0 right-0 z-50 bg-white shadow-[0_-4px_12px_rgba(0,0,0,0.1)]">
