@@ -7,16 +7,24 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predev": "node generate-sw.cjs",
+    "prebuild": "node sgenerate-sw.cjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.10",
     "axios": "^1.10.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "firebase": "^11.9.1",
     "formik": "^2.4.6",
+    "lucide-react": "^0.517.0",
     "path": "^0.12.7",
     "react": "^19.1.0",
+    "react-datepicker": "^8.4.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2",
+    "react-toastify": "^11.0.5",
     "yup": "^1.6.1"
   },
   "devDependencies": {
