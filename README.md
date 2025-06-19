@@ -13,3 +13,6 @@
 ## ADMIN USER LOGIN
 - email : admin@dexa.com
 - password : Password123
+
+## SCREENSHOT
+![image](https://github.com/user-attachments/assets/ad2bf42e-de3b-4f6c-a77d-f1f735bc2ddf)
