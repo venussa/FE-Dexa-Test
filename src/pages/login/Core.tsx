@@ -33,7 +33,7 @@ const Core = () => {
 
                 const me = await api.get("/user/profile");
                 const role = me.data.role.toLowerCase();
-                navigate(`/${role}/profile`);
+                navigate(`/${role}/home`);
             } catch {
                 setError("Email or password is wrong !");
             }
