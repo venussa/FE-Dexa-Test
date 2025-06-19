@@ -19,8 +19,8 @@ const Core = () => {
             password: "",
         },
         validationSchema: Yup.object({
-            email: Yup.string().email("Format email tidak valid").required("Email wajib diisi"),
-            password: Yup.string().required("Password wajib diisi"),
+            email: Yup.string().email("Email Format Not Valid").required("Required field"),
+            password: Yup.string().required("Required field"),
         }),
         onSubmit: async (values) => {
             setError("");
@@ -35,7 +35,7 @@ const Core = () => {
                 const role = me.data.role.toLowerCase();
                 navigate(`/${role}/profile`);
             } catch {
-                setError("Email atau password salah");
+                setError("Email or password is wrong !");
             }
         },
     });

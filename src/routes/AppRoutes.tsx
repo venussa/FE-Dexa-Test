@@ -6,7 +6,7 @@ import { useAuth } from "@/contexts/AuthContext";
 
 const AppRoutes = () => {
   const { isAuthenticated, user, loading } = useAuth();
-  
+
   if (loading) return false;
 
   return (
@@ -30,7 +30,7 @@ const AppRoutes = () => {
             <Route
               key={i}
               path={path}
-              element={<Navigate to={`/${user.role.toLowerCase()}/profile`} replace />}
+              element={<Navigate to={`/${user.role.toLowerCase()}/home`} replace />}
             />
           );
         }

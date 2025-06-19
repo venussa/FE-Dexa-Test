@@ -15,8 +15,8 @@ const RoleGuard = ({ children, allowedRole }: Props) => {
   }
 
   if (user.role !== allowedRole) {
-    const fallback = user.role.toLowerCase(); // admin / user
-    return <Navigate to={`/${fallback}/profile`} replace />;
+    const fallback = user.role.toLowerCase();
+    return <Navigate to={`/${fallback}/home`} replace />;
   }
 
   return children;

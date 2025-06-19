@@ -8,7 +8,7 @@ interface Props {
 const Index = ({ formik, error }: Props) => {
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+        <div className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-pink-400 to-orange-300">
             <div className="bg-white rounded-xl shadow-md p-8 w-full max-w-sm">
                 <div className="flex justify-center mb-[20px]">
                     <div className="flex justify-center">
@@ -50,7 +50,7 @@ const Index = ({ formik, error }: Props) => {
                 <div className="pt-[20px]">
                     <button
                         type="submit"
-                        className="w-full py-2 text-white font-semibold rounded bg-[#a91e14] hover:bg-[#8c1911] transition"
+                        className="w-full py-2 text-white font-semibold rounded bg-gradient-to-r from-pink-500 to-red-400 text-white transition"
                         onClick={() => formik.handleSubmit()}
                     >
                         LOGIN
